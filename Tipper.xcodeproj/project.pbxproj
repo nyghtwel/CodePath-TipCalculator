@@ -14,6 +14,7 @@
 		6460402B1DFDBC2B005D7636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646040291DFDBC2B005D7636 /* LaunchScreen.storyboard */; };
 		646040361DFDBC2B005D7636 /* TipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646040351DFDBC2B005D7636 /* TipperTests.swift */; };
 		646040411DFDBC2B005D7636 /* TipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646040401DFDBC2B005D7636 /* TipperUITests.swift */; };
+		6460404F1DFDFD51005D7636 /* TextFieldMaxLengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6460404E1DFDFD51005D7636 /* TextFieldMaxLengths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6460403C1DFDBC2B005D7636 /* TipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		646040401DFDBC2B005D7636 /* TipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipperUITests.swift; sourceTree = "<group>"; };
 		646040421DFDBC2B005D7636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6460404E1DFDFD51005D7636 /* TextFieldMaxLengths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				646040201DFDBC2B005D7636 /* AppDelegate.swift */,
 				646040221DFDBC2B005D7636 /* ViewController.swift */,
 				646040241DFDBC2B005D7636 /* Main.storyboard */,
+				6460404E1DFDFD51005D7636 /* TextFieldMaxLengths.swift */,
 				646040271DFDBC2B005D7636 /* Assets.xcassets */,
 				646040291DFDBC2B005D7636 /* LaunchScreen.storyboard */,
 				6460402C1DFDBC2B005D7636 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6460404F1DFDFD51005D7636 /* TextFieldMaxLengths.swift in Sources */,
 				646040231DFDBC2B005D7636 /* ViewController.swift in Sources */,
 				646040211DFDBC2B005D7636 /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +518,7 @@
 				646040471DFDBC2B005D7636 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		646040481DFDBC2B005D7636 /* Build configuration list for PBXNativeTarget "TipperTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				6460404A1DFDBC2B005D7636 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6460404B1DFDBC2B005D7636 /* Build configuration list for PBXNativeTarget "TipperUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				6460404D1DFDBC2B005D7636 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
