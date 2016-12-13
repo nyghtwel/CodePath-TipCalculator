@@ -27,10 +27,8 @@ class ViewController: UIViewController {
         billField.becomeFirstResponder()
         if let bill = UserDefaults.standard.string(forKey: "userBill"){
             billField.text = bill
-            print(bill)
             billField.reloadInputViews()
             self.calculateTip(UITextField())
-            
         }
         let num = UserDefaults.standard.integer(forKey: "userSlider")
         if num != 0{
@@ -38,9 +36,7 @@ class ViewController: UIViewController {
             self.sliderValueChanged(tipSlider)
         }
         
-        
     }
-
    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
