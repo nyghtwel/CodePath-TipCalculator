@@ -23,6 +23,7 @@ The following **additional** features are implemented:
 - [X] Set max character length to 6 for bill textField
 - [X] Add UISlider to select tip amount from 5% to 25%
 - [X] Remembering the tip amount across app restarts (if <10mins)
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
