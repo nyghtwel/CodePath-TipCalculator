@@ -20,12 +20,25 @@ class ViewController: UIViewController {
    
     
     
+    
     var currentValue:Int! = 5
     override func viewDidLoad() {
         super.viewDidLoad()
         billField.becomeFirstResponder()
-      
-
+        if let bill = UserDefaults.standard.string(forKey: "userBill"){
+            billField.text = bill
+            print(bill)
+            billField.reloadInputViews()
+            self.calculateTip(UITextField())
+            
+        }
+        let num = UserDefaults.standard.integer(forKey: "userSlider")
+        if num != 0{
+            tipSlider.value = Float(num)
+            self.sliderValueChanged(tipSlider)
+        }
+        
+        
     }
 
    
@@ -37,15 +50,11 @@ class ViewController: UIViewController {
     
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         print("tap working")
-
-        let touchLocation: CGPoint = sender.location(in: sender.view)
-        
-        
-        print(touchLocation)
         
     }
 
-    @IBAction func calculateTip(_ sender: Any) {
+    @IBAction func calculateTip(_ sender: UITextField) {
+
         let bill = Double(billField.text!) ?? 0
         let percent = Double(currentValue)
         
@@ -53,6 +62,8 @@ class ViewController: UIViewController {
         let total = bill + tip
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        UserDefaults.standard.set(String(bill), forKey: "userBill")
+        UserDefaults.standard.synchronize()
         
     }
     
@@ -60,6 +71,8 @@ class ViewController: UIViewController {
         currentValue! = Int(sender.value)
         tipPercentLabel.text = "\(currentValue!)"+"%"
         self.calculateTip(UITextField())
+        UserDefaults.standard.set(currentValue, forKey: "userSlider")
+        UserDefaults.standard.synchronize()
     }
 
 }
